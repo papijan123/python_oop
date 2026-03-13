@@ -4,6 +4,8 @@ class student:
         self.fname=fname
         self.lname=lname
         self.id=id
+    def getfullname(self):
+        return self.fname+self.lname
         
     def display(self):
         print("my full name is"+self.getfullname())
@@ -11,8 +13,7 @@ class student:
         print("my id is"+str(self.id))
         
         
-    def getfullname(self):
-        return self.fname+self.lname
+    
         
 stu1=student("karunarasan","papijan",11000)
 stu1.display()

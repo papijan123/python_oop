@@ -10,9 +10,9 @@ class student:
         self.m3=m3
     def calculate(self):
         return self.m1+self.m2+self.m3
-    
+        
     def calavg(self):
-        return self.calculate()//3
+        return self.calculate()/3
         
     def rank(self):
         if self.calavg()>=75:
@@ -26,14 +26,19 @@ class student:
         else :
             return "F"
         
-    def display(self):
-    
-        print("my id is"+str(self.id))
-        print("my name is"+self.name)
-        print("my total is"+str(self.calculate()))
-        print("my avg is"+str(self.calavg()))
-        print("my rank is"+self.rank())
+    def display(self):    
+        print("My id is"+str(self.id))
+        print("My name is"+self.name)
+        print("My total is"+str(self.calculate()))
+        print("My avg is"+str(self.calavg()))
+        print("My rank is"+self.rank())
 
-stu1=student(1000,"papijan")
-stu1.marks(72,75,78)
+sname=input("Enter your name:")
+sid=int(input("Enter your id:"))
+m1=int(input("Enter your mark1:"))
+m2=int(input("Enter your mark2:"))
+m3=int(input("Enter your mark3:"))
+
+stu1=student(sid,sname)
+stu1.marks(m1,m2,m3)
 stu1.display()

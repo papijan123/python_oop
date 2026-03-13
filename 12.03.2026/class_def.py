@@ -2,9 +2,7 @@ class student:
 	
     def __init__(self,name,id):
         self.name=name
-        self.id=id
-        
-        
+        self.id=id        
     def display(self):
         print("my name is"+self.name)
         print("my id is"+str(self.id))
