@@ -33,7 +33,7 @@ class student:
         print("my name is"+self.name)
         print("my total is"+str(self.calculate()))
         print("my avg is"+str(self.calavg()))
-         print("my rank is"+self.rank())
+        print("my rank is"+self.rank())
 
 stu1=student(1000,"papijan") 
 stu1.marks(72,75,78)
