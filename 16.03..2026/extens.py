@@ -18,4 +18,4 @@ class B(A):
 obj2=B()
 obj2.getx()
 obj2.gety()
-obj2.getz()   
+obj2.getz()
